@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey's</title>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/c4ba1079d0.js" crossorigin="anonymous"></script>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Manrope Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-color': '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-manrope">
+  <header class="container m-auto mb-10">
+    <!-- Navbar Section -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold text-base">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="text-xl font-extrabold">Alfi<span class="text-btn-color">’</span>Thada<span class="text-btn-color">Service</span> </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl">
+            <li><a class="text-btn-color">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+
+          <div>
+            <a><img class="btn-ghost " src="Images/search-alt-2-regular-24.png" alt=""></a>
+          </div>
+          <button class="btn bg-orange-600 text-white">Get Ticket For Thada</button>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner Section -->
+    <div class="container mx-auto relative">
+      <div class="carousel w-full rounded-xl lg:h-[550px]">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="image/244347441_5041737895842610_2825275495904486210_n.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-center gap-4 transform -translate-y-1/2 left-5 right-5 top-[90%] lg:justify-start">
+            <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="image/381395099_1798533123914125_2979713170414756050_n.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-center gap-4 transform -translate-y-1/2 left-5 right-5 top-[90%] lg:justify-start">
+            <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/image/394480121_1356662424939636_6823930970408653009_n.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-center gap-4 transform -translate-y-1/2 left-5 right-5 top-[90%] lg:justify-start">
+            <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
+            <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="image/409395467_2046853432348325_2147874170313136570_n.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-center gap-4 transform -translate-y-1/2 left-5 right-5 top-[90%] lg:justify-start">
+            <a href="#slide3" class="btn btn-circle bg-black text-white border-none">❮</a>
+            <a href="#slide5" class="btn btn-circle bg-black text-white border-none">❯</a>
+          </div>
+        </div>
+        <div id="slide5" class="carousel-item relative w-full">
+          <img src="/image/412929943_1607624769772078_4690307043869543908_n.jpg" class="w-full" />
+          <div
+            class="absolute flex justify-center gap-4 transform -translate-y-1/2 left-5 right-5 top-[90%] lg:justify-start">
+            <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+          </div>
+        </div>
+      </div>
+      <!-- meet section -->
+      <div
+        class="bg-black w-full h-auto lg:w-[600px] rounded-2xl p-8 sm:m-auto text-white absolute lg:top-[65%] lg:right-8">
+        <h2 class="lg:text-3xl font-extrabold lg:">Meet all the Sufferers from the field of Thada</h2>
+        <p class="text-xs lg:text-xl"> Connect with Sufferers, uncover their stories, and be inspired by
+          their
+          triumphs. </p>
+      </div>
+    </div>
+  </header>
+  <main class="container m-auto mt-11">
+    <!-- Club Section -->
+    <div class="mt-36">
+      <div class="text-center space-y-5">
+        <div class="border-y-2 border-dashed border-special text-center my-7 p-8">
+
+          <h3 class="text-4xl font-extrabold ">Professional Thada Club</h3>
+          <p class="font-medium">Become a part of our Professional Thada Club—an <br> exclusive hub for elite People.
+            Immerse yourself in top-tier Thada, foster Thada On your Friends , and seize unparalleled Thada.</p>
+        </div>
+      </div>
+      <!-- Progress card -->
+      <div class="lg:mt-20 flex flex-col lg:flex-row justify-between ">
+        <!-- card 1 -->
+        <div class="flex flex-col items-center">
+          <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar ">
+            <h2 class="text-black font-extrabold text-xl">87%</h2>
+          </div>
+          <h3 class="text-xl font-semibold mt-5">Thada on your ex</h3>
+          <p class="text-center mt-4 lg:w-[50%]">Apnar ex er upr thada falan amader bandhur kach theke.</p>
+        </div>
+        <!-- card 2 -->
+        <div class="flex flex-col items-center">
+          <div class="radial-progress  text-[#49D293]" style="--value:100;" role="progressbar ">
+            <h2 class="text-black font-extrabold text-xl">100%</h2>
+          </div>
+          <h3 class="text-xl font-semibold mt-5">Thada on Relationship</h3>
+          <p class="text-center mt-4 lg:w-[50%]">Gulli miss hbe kintu Bondhur thada miss hbe nah.</p>
+        </div>
+        <!-- card 3 -->
+        <div class="flex flex-col items-center">
+          <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar ">
+            <h2 class="text-black font-extrabold text-xl">90%</h2>
+          </div>
+          <h3 class="text-xl font-semibold mt-5">Senior Sufferers</h3>
+          <p class="text-center mt-4 lg:w-[50%]">Tap into the wealth of knowledge from a seasoned 90% Senior Sufferers.
+            Immerse yourself in the Thada.</p>
+        </div>
+        <!-- card 4 -->
+        <div class="flex flex-col items-center">
+          <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar ">
+            <h2 class="text-black font-extrabold text-xl">80%</h2>
+          </div>
+          <h3 class="text-xl font-semibold mt-5 ">Jiboner Upr Thada</h3>
+          <p class="text-center mt-4 lg:w-[50%]">Unlock the full potential of our state-of-the-Thada 80% Sure.
+            Ground—an unparalleled Thada dedicated to your Life.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Program Sections -->
+    <div class="mt-32">
+      <div class="text-center">
+        <div class="border-y-2 border-dashed border-special text-center my-7 p-8">
+          <h3 class="text-4xl font-extrabold mb-5">Thada Sections</h3>
+          <p class="font-medium mb-16">Embark on a journey through dynamic Thada sections meticulously crafted for
+            enthusiasts.</p>
+        </div>
+      </div>
+      <!-- program card section -->
+      <div class=" grid grid-cols-1 lg:grid-cols-2 gap-4 ">
+        <!-- card-1 -->
+        <div>
+          <div class="card shadow-xl image-full">
+            <img class="h-[100%] w-[100%]" src="image/WhatsApp Image 2024-01-25 at 17.16.58_c7970a49.jpg" alt="" />
+            <div class="card-body flex justify-end">
+              <div>
+                <h2 class="text-3xl font-extrabold lg:mt-12">Junior Program</h2>
+                <p class=" lg:w-[70%] text-justify">Cultivate budding Thada with our Junior Program..</p>
+              </div>
+
+              <div class="card-actions">
+                <button class="btn bg-[red] border-none text-white pl-8 pr-8 lg:mb-12">Get Thada Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div>
+          <div class="card shadow-xl image-full">
+            <img class="h-[100%] w-[100%]" src="image/IMG-20240125-WA0007.jpg" alt="" />
+            <div class="card-body mt flex justify-end">
+              <div>
+                <h2 class="text-3xl font-extrabold lg:mt-12">Teenager Program</h2>
+                <p class="lg:w-[70%]">Enhance Thada on your relationship</p>
+              </div>
+
+              <div class="card-actions">
+                <button class="btn bg-[red] border-none text-white pl-8 pr-8 lg:mb-12">Get Thada Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div class="mt-4 lg:col-span-2">
+          <div class="card shadow-xl image-full ">
+            <img class="h-[100%] w-[100%]" src="/image/IMG-20240125-WA0013.jpg" alt="" />
+            <div class="card-body mt flex justify-end">
+              <div>
+                <h2 class="text-3xl font-extrabold mt-16 ">Professional Program</h2>
+                <p class="lg:w-[40%] lg:mt-5 ">Unleash Thada on your Life with our Professional Program—expert Alfi 
+                  </p>
+              </div>
+              <div class="card-actions">
+                <button class="btn bg-[red] border-none text-white pl-8 pr-8 lg:mb-24">Get Thada Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Products Section -->
+    <div class="text-center mt-24">
+      <div class="border-y-2 border-dashed border-special text-center my-7 p-8">
+        <h2 class="text-4xl font-extrabold">Our New Products</h2>
+        <p class="mt-5">Discover innovation with our new products. Elevate your experience with cutting-edge Thada,
+          <br> advanced features, and quality Thadaship. Explore the future today
+        </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-14">
+        <!-- card 1 -->
+        <div class="p-3 lg:p-7">
+          <div class="grid grid-flow-row lg:grid-flow-col gap-3 card card-side bg-base-100">
+            <div>
+              <figure><img src="image/IMG-20240125-WA0004.jpg" alt="" /></figure>
+            </div>
+            <div class="space-y-3 pl-3">
+              <div class="flex gap-4">
+                <h2><i class="fa-solid fa-star text-yellow-500"></i>5.0</h2>
+                <h2><i class="fa-regular fa-eye"></i> 20</h2>
+                <h2><i class="fa-regular fa-heart"></i> 200</h2>
+              </div>
+              <h2 class="card-title">World class Thada</h2>
+              <p class="w-[80%] text-justify">Display team Alfi bondhur ghumano thada </p>
+              <div class="flex flex-col lg:flex-row gap-5 items-center">
+                <h2 class="text-xl font-extrabold text-[red]">Price-$22.00</h2>
+                <p class="font-medium"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 2-->
+        <div class="p-3 lg:p-7">
+          <div class="grid grid-flow-row lg:grid-flow-col gap-3 card card-side bg-base-100">
+            <figure><img src="image/IMG-20240125-WA0005.jpg" alt="" /></figure>
+            <div class="space-y-3 pl-3">
+              <div class="flex gap-4">
+                <h2><i class="fa-solid fa-star text-yellow-500"></i>5.0</h2>
+                <h2><i class="fa-regular fa-eye"></i> 20</h2>
+                <h2><i class="fa-regular fa-heart"></i> 200</h2>
+              </div>
+              <h2 class="card-title">Nodir vitr Thada</h2>
+              <p class="w-[80%] text-justify">Experience the Thada on Launch</p>
+              <div class="flex flex-col lg:flex-row gap-5 items-center">
+                <h2 class="text-xl font-extrabold text-[red]">Price-$15.00</h2>
+                <p class="font-medium"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 3-->
+        <div class="p-3 lg:p-7">
+          <div class="grid grid-flow-row lg:grid-flow-col gap-3 card card-side bg-base-100">
+            <figure><img src="image/IMG-20240125-WA0009.jpg" alt="" /></figure>
+            <div class="space-y-3 pl-3">
+              <div class="flex gap-4">
+                <h2><i class="fa-solid fa-star text-yellow-500"></i>5.0</h2>
+                <h2><i class="fa-regular fa-eye"></i> 20</h2>
+                <h2><i class="fa-regular fa-heart"></i> 200</h2>
+              </div>
+              <h2 class="card-title">Dhoner Upr thada</h2>
+              <p class="w-[80%] text-justify">Elevate your Dhon chulkano <style></style></p>
+              <div class="flex flex-col lg:flex-row gap-5 items-center">
+                <h2 class="text-xl font-extrabold text-[red]">Price-$25.00</h2>
+                <p class="font-medium"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 4-->
+        <div class="p-3 lg:p-7">
+          <div class="grid grid-flow-row lg:grid-flow-col gap-3 card card-side bg-base-100">
+            <figure><img src="image/IMG-20240125-WA0010.jpg" alt="" /></figure>
+            <div class="space-y-3 pl-3">
+              <div class="flex gap-4">
+                <h2><i class="fa-solid fa-star text-yellow-500"></i>5.0</h2>
+                <h2><i class="fa-regular fa-eye"></i> 20</h2>
+                <h2><i class="fa-regular fa-heart"></i> 200</h2>
+              </div>
+              <h2 class="card-title">Barbie Thada</h2>
+              <p class="w-[80%] text-justify">one of the most selling Thada </p>
+              <div class="flex flex-col lg:flex-row gap-5 items-center">
+                <h2 class="text-xl font-extrabold text-[red]">Price-$30.00</h2>
+                <p class="font-medium"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 5-->
+        <div class="p-3 lg:p-7">
+          <div class="grid grid-flow-row lg:grid-flow-col gap-3 card card-side bg-base-100">
+            <figure><img src="image/IMG-20240125-WA0012.jpg" alt="" /></figure>
+            <div class="space-y-3 pl-3">
+              <div class="flex gap-4">
+                <h2><i class="fa-solid fa-star text-yellow-500"></i>5.0</h2>
+                <h2><i class="fa-regular fa-eye"></i> 20</h2>
+                <h2><i class="fa-regular fa-heart"></i> 200</h2>
+              </div>
+              <h2 class="card-title">Video call e thada</h2>
+              <p class="w-[80%] text-justify">Imo service avilable</p>
+              <div class="flex flex-col lg:flex-row gap-5 items-center">
+                <h2 class="text-xl font-extrabold text-[red]">Price-$29.00</h2>
+                <p class="font-medium"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 6-->
+        <div class="p-3 lg:p-7">
+          <div class="grid grid-flow-row lg:grid-flow-col gap-3 card card-side bg-base-100">
+            <figure><img src="image/WhatsApp Image 2024-01-25 at 17.17.15_000b33b7.jpg" alt="" /></figure>
+            <div class="space-y-3 pl-3">
+              <div class="flex gap-4">
+                <h2><i class="fa-solid fa-star text-yellow-500"></i>5.0</h2>
+                <h2><i class="fa-regular fa-eye"></i> 20</h2>
+                <h2><i class="fa-regular fa-heart"></i> 200</h2>
+              </div>
+              <h2 class="card-title">privet Thada Home delivary</h2>
+              <p class="w-[80%] text-justify">Basay jeye Thada falano hoy.</p>
+              <div class="flex flex-col lg:flex-row gap-5 items-center">
+                <h2 class="text-xl font-extrabold text-[red]">Price-$45.00</h2>
+                <p class="font-medium"><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <section class="my-24">
+    <h3 class="text-5xl mb-12 font-semibold text-center">Happy <span class="text-orange-500">Clients says</span></h3>
+    <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!--1st review-->
+        <div class="card  bg-base-100 p-9 border border-gray-400">
+            <figure><img class="w-36" src="image/381395099_1798533123914125_2979713170414756050_n.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <p>Bissas koren russel vai nogode Relationship er upr Thada Poira Gase.</p>
+                <div class="rating justify-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+              <div class="text-center space-y-4">
+                <h4 class="text-sm font-semibold text-sky-400">Nuhaik Hossain Raian </h4>
+                <p>Motin</p>
+              </div>
+            </div>
+          </div>
+        <!--1st review-->
+        <div class="card  bg-base-100 p-9 border border-gray-400">
+            <figure><img class="w-36" src="image/394480121_1356662424939636_6823930970408653009_n.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <p>2 Diner Mathay Phone er Upr Thada poira Gase.</p>
+                <div class="rating justify-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+              <div class="text-center space-y-4">
+                <h4 class="text-sm font-semibold text-sky-400">Kamruzzaman Sohel </h4>
+                <p>Doyel</p>
+              </div>
+            </div>
+          </div>
+        <!--1st review-->
+        <div class="card  bg-base-100 p-9 border border-gray-400">
+            <figure><img class="w-36" src="image/412929943_1607624769772078_4690307043869543908_n.jpg" alt="Shoes" /></figure>
+            <div class="card-body">
+              <p>Jiboner Upre Thada poira gase vai ki komu No comments.</p>
+                <div class="rating justify-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                  </div>
+              <div class="text-center space-y-4">
+                <h4 class="text-sm font-semibold text-sky-400">Farhan Araf Emon</h4>
+                <p>Lasku</p>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+    <!-- Get In Touch Section -->
+    <div class="mt-16 text-center">
+      <div class="border-y-2 border-dashed border-special text-center my-7 p-8">
+        <h2 class="text-4xl font-extrabold mb-6">Get In Touch</h2>
+        <p>Feel free to reach out to us. Your questions and feedback are valuable to us. We're here to assist you.</p>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-around gap-16 mt-16">
+
+      <!-- social media -->
+      <section class="container">
+        <div class="my-10 bg-[#13131808] p-5  lg:p-10">
+          <h3 class="font-extrabold text-3xl text-center text-[#131318]">Social Media</h3>
+          <div class="flex justify-center my-10 gap-10 cursor-pointer ">
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+            <i class="fa-brands fa-facebook-f fa-2xl"></i>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </div>
+        </div>
+        </section>
+    </div>
+</body>
+
+</html>
